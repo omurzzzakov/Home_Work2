@@ -39,7 +39,7 @@ class ViewController: UIViewController {
     // Задание 4
         
     // Задание 5
-       let result5 = squaring(number: 10)
+        let result5 = squaring(number: 10, number2: 4)
         print(result5)
     // Задание 6
         let result6 = factorial(number: 10)
@@ -123,8 +123,9 @@ class ViewController: UIViewController {
         }
         
 }
-    func squaring(number: Int) -> Int {
-        return number * number
+    func squaring(number: Double, number2: Double) -> Double {
+        let result = pow(number, number2)
+        return result
      }
 }
     func factorial(number:Int) -> Int {
