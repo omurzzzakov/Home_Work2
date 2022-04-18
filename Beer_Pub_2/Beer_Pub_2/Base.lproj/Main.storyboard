@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Beer_Pub_2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Продано " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tjn-L7-Cj7">
+                                <rect key="frame" x="310" y="555.5" width="75" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Продано" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WQW-ds-gO6">
+                                <rect key="frame" x="41" y="561.5" width="71" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m7a-PA-KCZ">
+                                <rect key="frame" x="40.5" y="623" width="86.5" height="31"/>
+                                <color key="tintColor" red="0.24408045411109924" green="0.82006329298019409" blue="0.076405175030231476" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Sell Miller"/>
+                                <connections>
+                                    <action selector="DidTapMillerWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DTC-Jg-gQ9"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xzd-bv-nMM">
+                                <rect key="frame" x="286.5" y="623" width="98" height="31"/>
+                                <color key="tintColor" red="0.24408045411109924" green="0.82006329298019409" blue="0.076405175030231476" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Sell Corona"/>
+                                <connections>
+                                    <action selector="DidTapCoronaWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cjh-Cd-LhO"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Прибыль за день" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gbk-V4-Zg4">
+                                <rect key="frame" x="140" y="391" width="136" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="awM-2p-OaD">
+                                <rect key="frame" x="151.5" y="458" width="124" height="28"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Прибыль за день ">
+                                            <attributes>
+                                                <font key="NSFont" size="12" name="Helvetica"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="DidIncomeWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YQa-ac-DaM"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Остаток" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bqt-9S-aju">
+                                <rect key="frame" x="55" y="702" width="65.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Остаток" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4iO-6Y-dzC">
+                                <rect key="frame" x="302.5" y="702" width="65.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Менеджер" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CFs-Gh-gd8">
+                                <rect key="frame" x="41" y="272" width="85.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="066-XP-4xM">
+                                <rect key="frame" x="149.5" y="177" width="115" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Новая смена "/>
+                                <connections>
+                                    <action selector="DidZeroingWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RXL-bT-gtQ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s2o-Rw-14M">
+                                <rect key="frame" x="168" y="769" width="80" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Остаток"/>
+                                <connections>
+                                    <action selector="DidRemainderWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2cg-6O-MWB"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="WQW-ds-gO6" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="123.75" id="3jK-AY-UMu"/>
+                            <constraint firstItem="CFs-Gh-gd8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-123.25" id="6P9-dP-6dH"/>
+                            <constraint firstItem="m7a-PA-KCZ" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="190.5" id="Cl6-9n-JM8"/>
+                            <constraint firstItem="awM-2p-OaD" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="24" id="MME-uG-oJs"/>
+                            <constraint firstItem="4iO-6Y-dzC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="128.25" id="OH1-lA-F8o"/>
+                            <constraint firstItem="4iO-6Y-dzC" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="264.5" id="Q9M-Ak-NoU"/>
+                            <constraint firstItem="Gbk-V4-Zg4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="1" id="RxV-DV-haG"/>
+                            <constraint firstItem="066-XP-4xM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Tsm-rk-ffb"/>
+                            <constraint firstItem="CFs-Gh-gd8" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-165.5" id="Yfc-RY-BH4"/>
+                            <constraint firstItem="m7a-PA-KCZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-123.25" id="aJZ-BV-8ym"/>
+                            <constraint firstItem="WQW-ds-gO6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-130.5" id="drQ-Eq-Uev"/>
+                            <constraint firstItem="066-XP-4xM" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-255.5" id="fdW-iT-ari"/>
+                            <constraint firstItem="Xzd-bv-nMM" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="190.5" id="gOv-4P-8xR"/>
+                            <constraint firstItem="Xzd-bv-nMM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="128.5" id="iVe-IB-uOe"/>
+                            <constraint firstItem="bqt-9S-aju" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-119.25" id="prg-th-ApT"/>
+                            <constraint firstItem="Gbk-V4-Zg4" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-46.5" id="rSU-OZ-YdU"/>
+                            <constraint firstItem="bqt-9S-aju" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="264.5" id="tbX-wf-qiz"/>
+                            <constraint firstItem="Tjn-L7-Cj7" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="117.75" id="vdG-YX-yav"/>
+                            <constraint firstItem="awM-2p-OaD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="6.5" id="ygV-RL-SfE"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="s2o-Rw-14M" secondAttribute="trailing" constant="166" id="zYM-zq-1Tp"/>
+                            <constraint firstItem="Tjn-L7-Cj7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="140.5" id="zfc-B2-lm0"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="s2o-Rw-14M" secondAttribute="bottom" constant="62" id="zyL-0h-Hzt"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="BarmanLogo" destination="CFs-Gh-gd8" id="o5c-Ry-lMH"/>
+                        <outlet property="CoronaLogo" destination="Tjn-L7-Cj7" id="wlM-VF-gwK"/>
+                        <outlet property="CoronaReminder" destination="4iO-6Y-dzC" id="dHE-4G-QOR"/>
+                        <outlet property="DidCorona" destination="Xzd-bv-nMM" id="dRY-hK-UAB"/>
+                        <outlet property="DidIncome" destination="awM-2p-OaD" id="N2y-ez-SMY"/>
+                        <outlet property="DidMiller" destination="m7a-PA-KCZ" id="Ctw-Ac-vHX"/>
+                        <outlet property="DidRemainder" destination="s2o-Rw-14M" id="sUk-fR-F52"/>
+                        <outlet property="DidZeroing" destination="066-XP-4xM" id="LTI-wR-0OF"/>
+                        <outlet property="Income" destination="Gbk-V4-Zg4" id="UNe-Cl-slX"/>
+                        <outlet property="MillerLogo" destination="WQW-ds-gO6" id="S2z-cD-ysZ"/>
+                        <outlet property="MillerReminder" destination="bqt-9S-aju" id="I4j-Ba-UKS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="28.985507246376812" y="68.973214285714278"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
